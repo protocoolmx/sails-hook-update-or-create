@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-update-or-create",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Sails.js hook model method that updates or creates a record based on criteria and values argument.",
   "main": "index.js",
   "sails": {
