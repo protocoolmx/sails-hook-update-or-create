@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-update-or-create",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sails.js hook model method that updates or creates a record based on criteria and values argument.",
   "main": "index.js",
   "sails": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshuamarquez/sails-hook-update-or-create.git"
+    "url": "git+https://github.com/protocoolmx/sails-hook-update-or-create.git"
   },
   "keywords": [
     "sails",
