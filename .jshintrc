@@ -1,0 +1,20 @@
+{
+  "evil": true,
+  "regexdash": true,
+  "node": true,
+  "sub": true,
+  "smarttabs": false,
+  "trailing": false,
+  "expr": true,
+  "boss": true,
+  "loopfunc": false,
+  "supernew": true,
+  "laxcomma": false,
+  "quotmark": "single",
+  "eqnull": false,
+  "curly": true,
+  "eqeqeq": true,
+  "-W080": true,
+  "esversion": 6,
+  "-W117": false
+}
