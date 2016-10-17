@@ -1,6 +1,7 @@
 'use strict';
 
 let Sails = require('sails').Sails;
+let assert = require('assert');
 
  describe('Basic tests ::', function() {
 
@@ -16,13 +17,17 @@ let Sails = require('sails').Sails;
      // Attempt to lift sails
      Sails().lift({
        hooks: {
-         // Load the hook
-         'updateorcreate': require('../'),
+         // Load hooks
+         'update-or-create': require('../'),
+         'mvcsloader': require('./testHook'),
          // Skip grunt
          'grunt': false
        },
        log: {
-         level: 'info'
+         level: 'error'
+       },
+       models: {
+         migrate: 'safe'
        }
      }, (err, _sails) => {
        if (err) {
@@ -37,17 +42,24 @@ let Sails = require('sails').Sails;
    // After tests are complete, lower Sails
    after(function (done) {
 
-       // Lower Sails (if it successfully lifted)
-       if (sails) {
-           return sails.lower(done);
-       }
-       // Otherwise just return
-       return done();
+     // Lower Sails (if it successfully lifted)
+     if (sails) {
+       return sails.lower(done);
+     }
+     // Otherwise just return
+     return done();
    });
 
    // Test that Sails can lift with the hook in place
    it ('sails does not crash', function() {
-       return true;
+     return true;
+   });
+
+   describe('Example Model', function() {
+
+     it('should have .updateOrCreate() method', function() {
+       assert(typeof Example.updateOrCreate === 'function');
+     });
    });
 
  });
