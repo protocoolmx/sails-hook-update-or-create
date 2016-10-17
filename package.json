@@ -21,6 +21,9 @@
   ],
   "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
   "license": "MIT",
+  "engines" : {
+    "node" : ">=4.0.0"
+  },
   "bugs": {
     "url": "https://github.com/protocoolmx/sails-hook-update-or-create/issues"
   },
