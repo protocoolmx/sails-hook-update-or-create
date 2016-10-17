@@ -1,10 +1,10 @@
 # sails-hook-update-or-create
 
-[![npm version](https://badge.fury.io/js/sails-hook-update-or-create.svg)](https://badge.fury.io/js/sails-hook-update-or-create)
+[![npm version](https://badge.fury.io/js/sails-hook-update-or-create.svg)](https://badge.fury.io/js/sails-hook-update-or-create) [![Build Status](https://travis-ci.org/protocoolmx/sails-hook-update-or-create.svg?branch=master)](https://travis-ci.org/protocoolmx/sails-hook-update-or-create)
 
 Sails.js hook model method that updates or creates a record based on criteria and values argument.
 
-## Install 
+## Install
 
 ```
 $ npm install sails-hook-update-or-create --save
